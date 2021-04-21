@@ -21,10 +21,8 @@ let pokemonList = [];
     },
 ];
 
-for (let i = 0; (pokemonList.length) ; i++){
-  if (pokemonList[i].height > 2){
-    document.write(pokemonList[i].name + ' (height:) ' + pokemonList[i].height + ' -Wow, that\'s big! ' + pokemonList[i].type + ' ' + pokemonList[i].abilities + ' ' + '<br/>')
-  }
-  else { document.write(pokemonList[i].name + ' (height:)' + pokemonList[i].height + ' ' + pokemonList[i].type + ' ' + pokemonList[i].abilities + ' ' + '<br/>')
-  }
+function myLoopFunction(pokemon){
+  document.write( pokemon.name + ' ' + pokemon.height + ' ' + pokemon.type + ' ' + pokemon.abilities + ' ');
 }
+
+pokemonList.forEach(myLoopFunction);
