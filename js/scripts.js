@@ -22,7 +22,11 @@ let pokemonList = [];
 ];
 
 function myLoopFunction(pokemon){
-  document.write( pokemon.name + ' ' + pokemon.height + ' ' + pokemon.type + ' ' + pokemon.abilities + ' ');
-}
+  if (pokemon.height > 2) {
+    document.write( pokemon.name + ' (height: ' + pokemon.height +')' + '- Wow, that is big!'  + pokemon.type + ' ' + pokemon.abilities + ' ' + '<br>')
+  }else{
+    document.write( pokemon.name + '(height: ' + pokemon.height +')' + pokemon.type + ' ' + pokemon.abilities + ' ' + '<br>')
+  }
+};
 
 pokemonList.forEach(myLoopFunction);
