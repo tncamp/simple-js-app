@@ -1,6 +1,5 @@
-//creates array of pokemon and their characteristics
-let pokemonList = [];
-  pokemonList = [
+var pokemonRepository = (function(){
+  var pokemonList = [
     {
       name: 'Pikachu',
       height: '1.4',
@@ -21,12 +20,24 @@ let pokemonList = [];
     },
 ];
 
-function myLoopFunction(pokemon){
-  if (pokemon.height > 2) {
-    document.write( pokemon.name + ' (height: ' + pokemon.height +')' + '- Wow, that is big!'  + pokemon.type + ' ' + pokemon.abilities + ' ' + '<br>')
-  }else{
-    document.write( pokemon.name + '(height: ' + pokemon.height +')' + pokemon.type + ' ' + pokemon.abilities + ' ' + '<br>')
+  function getAll () {
+    return pokemonList;
   }
-};
 
-pokemonList.forEach(myLoopFunction);
+  function add(pokemon) {
+    pokemonList.push(pokemon);
+  }
+
+  return {
+    getAll: getAll,
+    add: add
+  };
+})();
+
+pokemonRepository.getAll().forEach(function(pokemon) {
+  if (pokemon.height > 2) {
+    document.write( pokemon.name + ' (height: ' + pokemon.height +')' + '- Wow, that is big! '  + 'Type: ' + pokemon.type + ' Abilities:' + pokemon.abilities + ' ' + '<br>')
+  }else{
+    document.write( pokemon.name + '(height: ' + pokemon.height +')' + ' Type:' + pokemon.type + ' Abilities:' + pokemon.abilities + ' ' + '<br>')
+  }
+});
