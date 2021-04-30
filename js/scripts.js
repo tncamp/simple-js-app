@@ -1,24 +1,27 @@
 var pokemonRepository = (function(){
   var pokemonList = [
+
+let pokemonRepository = (function () {
+  let repository = [
     {
-      name: 'Pikachu',
+      name: 'Pikachu ',
       height: '1.4',
-      type: 'electric',
-      abilities:'static'
+      type: ' Electric',
+      abilities:' Static'
     },
     {
-      name: 'Ivysaur',
+      name: 'Ivysaur ',
       height: '3.3',
-      type: ['grass' , 'poison'],
-      abilities: 'overgrow'
+      type: ['Grass' , ' Poison'],
+      abilities: ' Overgrow'
     },
     {
-      name: 'Squirtle',
+      name: 'Squirtle ',
       height:'1.8',
-      type: 'water',
-      abilities: 'torrent'
+      type: ' Water',
+      abilities: ' Torrent'
     },
-];
+  ];
 
   function add(pokemon) {
     if (
