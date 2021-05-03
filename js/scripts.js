@@ -1,5 +1,3 @@
-var pokemonRepository = (function(){
-  var pokemonList = [
 
 let pokemonRepository = (function () {
   let repository = [
