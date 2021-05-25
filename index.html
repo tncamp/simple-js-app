@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pokedex</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class='page-header'>
-      <h1>Pokedex</h1>
-    </header>
+    <header class='page-header'></header>
 
-    <ul class ='pokemon-list'></ul>
 <!-- navbar -->
 
   <div class="container">
@@ -21,7 +20,7 @@
     </nav>
   </div>
 
-    <strong>
+    <ul class="list-group"></ul>
 
     <div class="modal fade"
     id="pokemonModal"
@@ -53,6 +52,5 @@
       <script src="./js/promise-polyfill.js"></script>
       <script src="./js/fetch-polyfill.js"></script>
       <script src="./js/scripts.js"></script>
-    </strong>
   </body>
 </html>
