@@ -1,0 +1,44 @@
+body {
+  margin: 20px;
+  font-family: "Courier New", sans-serif;
+  text-align: center;
+  padding-top: 70px;
+  text-transform: capitalize;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+}
+.list-group {
+  margin-top: 100px;
+  margin: 10px;
+  text-align: center;
+}
+.list-group-item {
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 6px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #cd0909;
+}
+button.btn.btn-block {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+}
+button.btn.btn-block:hover {
+  color: #000;
+}
+#pokemonModal {
+  color: #000;
+}
